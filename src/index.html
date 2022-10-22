@@ -5,10 +5,12 @@
 <link rel="stylesheet" href="css/styles.css"/>
 </head>
 <body>
-    <h1>PureSlider</h1>
-    <p>Simple slider component using advanced CSS techniques.</p>
+    <header>
+        <h1>PureSlider</h1>
+        <p>Simple slider component using advanced CSS techniques.</p>
+    </header>
     <div class="ps-wrapper">
-        <div class="ps-itens">
+        <div id="psContainer" class="ps-items">
             <div class="ps-item"><img src="https://picsum.photos/1366/768?grayscale&random=1"/></div>
             <div class="ps-item"><img src="https://picsum.photos/1366/768?grayscale&random=2"/></div>
             <div class="ps-item"><img src="https://picsum.photos/1366/768?grayscale&random=3"/></div>
@@ -20,7 +22,17 @@
             <div class="ps-item"><img src="https://picsum.photos/1366/768?grayscale&random=9"/></div>
             <div class="ps-item"><img src="https://picsum.photos/1366/768?grayscale&random=10"/></div>
         </div>
-      </div>
+    </div>
+    <script>
+        document.querySelector("#psContainer") 
+        .addEventListener("wheel", event => {
+            if(event.deltaY > 0) {
+                event.target.scrollBy(400, 0)
+            } else {
+                event.target.scrollBy(-400, 0)
+            }
+        })
+    </script>
 </body>
 </html>
   

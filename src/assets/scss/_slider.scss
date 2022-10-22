@@ -1,0 +1,23 @@
+.ps-wrapper {
+    width: 100vw;
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+}
+.ps-items {
+    display: flex;
+    overflow-x: auto;
+    object-fit: cover;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+.ps-item {
+    flex: none;
+    width: 40%;
+    height: 400px;
+    scroll-snap-align: start;
+    pointer-events: none;
+}
