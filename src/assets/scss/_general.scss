@@ -6,10 +6,20 @@
 body {
     display: grid;
     place-items: center;
+    font-size: 16px;
     height: 100vh;
     background-color: #f0f0f0;
     font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 header {
     text-align: center;
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 1rem;
+        color: #9e9eac;
+    }
 }
