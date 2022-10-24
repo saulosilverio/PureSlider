@@ -123,6 +123,6 @@ Customizing PureSlider is very easy. Using only CSS you can define how many slid
 
 Found a bug? You you can [open a new issue](https://github.com/saulosilverio/pureslider/issues/new) including as much information as you can gather. Comments and suggestions are welcome. :)
 
-Any questions? You can contact me at [saulossilverio@gmail.com.br](mailto:saulossilverio@gmail.com).
+Any questions? You can contact me at [saulossilverio@gmail.com](mailto:saulossilverio@gmail.com).
 
 Thank you!
