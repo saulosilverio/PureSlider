@@ -8,6 +8,7 @@
 - [Why use PureSlider?](#why-use-pureslider)
 - [Adding PureSlider to your project](#adding-pureslider-to-your-project)
 - [Customizing PureSlider](#customizing-pureslider)
+- [Contact](#contact)
 
 
 ## Introduction
@@ -103,3 +104,25 @@ In order for the Mouse Wheel to work only on the parent of the slides, it is nec
 ```
 
 ## Customizing PureSlider
+Customizing PureSlider is very easy. Using only CSS you can define how many slides to appear or the space between slides.
+
+```css
+.ps-items {
+    ...
+    gap: 30px; /* Space between slides */ 
+    align-items: flex-end; /* Slide alignment */ 
+}
+.ps-item {
+    ...
+    width: 100vw; /* Slide taking up 100% of the viewport. In this case only one slider will appear at a time. */ 
+    height: 40vh; /* Slide height */
+}
+```
+
+## Contact
+
+Found a bug? You you can [open a new issue](https://github.com/saulosilverio/pureslider/issues/new) including as much information as you can gather. Comments and suggestions are welcome. :)
+
+Any questions? You can contact me at [saulossilverio@gmail.com.br](mailto:saulossilverio@gmail.com).
+
+Thank you!
