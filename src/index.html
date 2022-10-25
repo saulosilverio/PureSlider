@@ -9,20 +9,20 @@
         <h1>PureSlider</h1>
         <p>Simple slider component using advanced CSS techniques.</p>
     </header>
-    <div class="ps-wrapper">
+    <section class="ps-wrapper" aria-label="carousel">
         <div id="psContainer" class="ps-items">
-            <div class="ps-item"><img src="https://picsum.photos/1366/768?grayscale&random=1"/></div>
-            <div class="ps-item"><img src="https://picsum.photos/1366/768?grayscale&random=2"/></div>
-            <div class="ps-item"><img src="https://picsum.photos/1366/768?grayscale&random=3"/></div>
-            <div class="ps-item"><img src="https://picsum.photos/1366/768?grayscale&random=4"/></div>
-            <div class="ps-item"><img src="https://picsum.photos/1366/768?grayscale&random=5"/></div>
-            <div class="ps-item"><img src="https://picsum.photos/1366/768?grayscale&random=6"/></div>
-            <div class="ps-item"><img src="https://picsum.photos/1366/768?grayscale&random=7"/></div>
-            <div class="ps-item"><img src="https://picsum.photos/1366/768?grayscale&random=8"/></div>
-            <div class="ps-item"><img src="https://picsum.photos/1366/768?grayscale&random=9"/></div>
-            <div class="ps-item"><img src="https://picsum.photos/1366/768?grayscale&random=10"/></div>
+            <div class="ps-item" role="group" aria-label="slide 1 of 10"><img src="https://picsum.photos/1366/768?grayscale&random=1"/></div>
+            <div class="ps-item" role="group" aria-label="slide 2 of 10"><img src="https://picsum.photos/1366/768?grayscale&random=2"/></div>
+            <div class="ps-item" role="group" aria-label="slide 3 of 10"><img src="https://picsum.photos/1366/768?grayscale&random=3"/></div>
+            <div class="ps-item" role="group" aria-label="slide 4 of 10"><img src="https://picsum.photos/1366/768?grayscale&random=4"/></div>
+            <div class="ps-item" role="group" aria-label="slide 5 of 10"><img src="https://picsum.photos/1366/768?grayscale&random=5"/></div>
+            <div class="ps-item" role="group" aria-label="slide 6 of 10"><img src="https://picsum.photos/1366/768?grayscale&random=6"/></div>
+            <div class="ps-item" role="group" aria-label="slide 7 of 10"><img src="https://picsum.photos/1366/768?grayscale&random=7"/></div>
+            <div class="ps-item" role="group" aria-label="slide 8 of 10"><img src="https://picsum.photos/1366/768?grayscale&random=8"/></div>
+            <div class="ps-item" role="group" aria-label="slide 9 of 10"><img src="https://picsum.photos/1366/768?grayscale&random=9"/></div>
+            <div class="ps-item" role="group" aria-label="slide 10 of 10"><img src="https://picsum.photos/1366/768?grayscale&random=10"/></div>
         </div>
-    </div>
+    </section>
     <script>
         document.querySelector("#psContainer") 
         .addEventListener("wheel", event => {
