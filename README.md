@@ -62,20 +62,23 @@ PureSlider utilizes some advanced CSS properties to provide smooth transitions a
     object-fit: cover;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    scroll-padding: 0 2rem;
     -webkit-overflow-scrolling: touch;
+    padding: 0 2rem;
 }
 .ps-item {
     flex: none;
-    width: 45vw;
-    height: 40vh;
+    width: 40vw;
     scroll-snap-align: start;
     pointer-events: none;
 }
+.ps-item img {
+    aspect-ratio: 4/3;
+}
 
-/* Customizing the size of odd slides */
-.ps-item:nth-of-type(odd) {
-    height: 50vh;
-    width: 30vw;
+/* Customizing the aspect ratio of odd slides */
+.ps-item:nth-of-type(odd) img {
+    aspect-ratio: 3/4;
 }
 ```
 

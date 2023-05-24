@@ -3,7 +3,7 @@
 
     img {
         height: 100%;
-        width: 100%;
+        max-width: 100%;
         object-fit: cover;
     }
 }
@@ -15,17 +15,27 @@
     object-fit: cover;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
+    scroll-padding: 0 2rem;
     -webkit-overflow-scrolling: touch;
+    padding: 0 2rem;
 }
 .ps-item {
     flex: none;
-    width: 45vw;
-    height: 40vh;
+    width: 40vw;
     scroll-snap-align: start;
     pointer-events: none;
 
+    @media (min-width: 768px) {
+        width: 25vw;
+    }
+
+    img {
+        aspect-ratio: 4/3;
+    }
+
     &:nth-of-type(odd) {
-        height: 50vh;
-        width: 30vw;
+        img {
+            aspect-ratio: 3/4;
+        }
     }
 }
