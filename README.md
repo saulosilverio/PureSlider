@@ -112,13 +112,12 @@ Customizing PureSlider is very easy. Using only CSS you can define how many slid
 ```css
 .ps-items {
     ...
-    gap: 30px; /* Space between slides */ 
+    gap: 2rem; /* Space between slides */ 
     align-items: flex-end; /* Slide alignment */ 
 }
 .ps-item {
     ...
     width: 100vw; /* Slide taking up 100% of the viewport. In this case only one slider will appear at a time. */ 
-    height: 40vh; /* Slide height */
 }
 ```
 
